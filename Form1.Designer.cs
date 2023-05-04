@@ -53,7 +53,7 @@
             this.gobutton.TabIndex = 3;
             this.gobutton.Text = "Перейти";
             this.gobutton.UseVisualStyleBackColor = true;
-            
+            this.gobutton.Click += new System.EventHandler(this.gobutton_Click_1);
             // 
             // textBox1
             // 

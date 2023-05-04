@@ -24,10 +24,7 @@ namespace _1505
         {
 
         }
-        
-
-
-        private void gobutton_Click(object sender, EventArgs e, KeyEventArgs e1)
+        private void gobutton_Click_1(object sender, EventArgs e)
         {
             string httpPattern = @"^http(s)?://[a-z0-9_-]+(\.[a-z0-9_-]*\.[a-z-\d]{2,9})";
             Regex regex = new Regex(httpPattern);
@@ -36,12 +33,11 @@ namespace _1505
             {
                 label1.Text = "";
                 webBrowser1.Navigate(new Uri(text));
-            } else
+            }
+            else
             {
                 label1.Text = "Невірно введена адреса.";
             }
         }
-
-
     }
 }
